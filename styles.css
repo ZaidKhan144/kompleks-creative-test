@@ -342,3 +342,109 @@ header {
     background: url('./assets/banner3.jpg') no-repeat right;
     width: 80%;
 }
+
+.impact-three {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px;
+    width: 100%;
+    border-top: 5px solid #00A3E1;
+}
+
+.impact-three-left {
+    width: 600px;
+    background-color: #3A5DAE;
+    position: relative;
+    z-index: -2;
+}
+
+.impact-three-left .dot-two {
+    position: absolute;
+    width: 80%;
+    display: block;
+    height: 100%;
+    left: 10%;
+    z-index: -1;
+}
+
+.stats-three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
+
+.stats-three .stats-three-img {
+    display: flex;
+    position: relative;
+}
+
+.stats-three .stats-three-img:before {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    display: block;
+}
+
+.stats-three .stats-three-img:after {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    display: block;
+}
+
+.stats-three-text {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stats-three-text p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-three-text p::before {
+    content: "";
+    background: url('./assets/strikethrough-3.1.svg') no-repeat;
+    height: 50px;
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    display: block;
+    z-index: -1;
+}
+
+.stats-three-text p::after {
+    content: "";
+    background: url('./assets/strikethrough-3.2.svg') no-repeat;
+    height: 50px;
+    width: 80%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    display: block;
+    z-index: -1;
+}
+
+.impact-three-right {
+    background: url('./assets/banner2.jpg') no-repeat center;
+    background-size: cover;
+    width: 80%;
+}
