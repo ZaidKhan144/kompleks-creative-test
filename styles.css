@@ -251,17 +251,92 @@ header {
     width: 600px;
     background-color: #1f315c;
     position: relative;
+    z-index: -2;
 }
 
-.impact-two-left img {
+.impact-two-left .dot-two {
     position: absolute;
     width: 80%;
     display: block;
     height: 100%;
     left: 10%;
+    z-index: -1;
 }
 
+.stats-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 5;
+}
 
+.stats-two .stats-two-img {
+    display: flex;
+    position: relative;
+}
+
+.stats-two .stats-two-img:before {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    display: block;
+}
+
+.stats-two .stats-two-img:after {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    display: block;
+}
+
+.stats-two-text {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stats-two-text p {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-two-text p::before {
+    content: "";
+    background: url('./assets/strikethrough-2.1.svg') no-repeat;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
+
+.stats-two-text p::after {
+    content: "";
+    background: url('./assets/strikethrough-2.2.svg') no-repeat;
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    display: block;
+    z-index: -1;
+}
 
 .impact-two-right {
     background: url('./assets/banner3.jpg') no-repeat right;
