@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    /* background-color: #2b2b2b; */
+    min-height: 100%
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    margin-right: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-links .donate {
+    border: 1px solid #C46D35;
+    padding: 5px 12px;
+}
+
+.nav-links .donate a {
+    color: #C46D35;
+}
+
+.nav-links .adviser {
+    border: 1px solid #00A3E1;
+    padding: 5px 12px;
+    position: relative;
+}
+
+.nav-links .adviser:after, .nav-links .adviser:before {
+    content: "";
+    height: 0;
+    width: 0;  
+    border-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+}
+
+.nav-links .adviser:before {
+    border-width: 0.5em;
+    border-right-color: #00A3E1;
+    border-bottom-color: #00A3E1;
+}
+
+.nav-links .adviser:after {
+    border-radius: 0.4em;
+    border-width: 0.2em;
+    border-right-color: #00A3E1;
+    border-bottom-color: #00A3E1;
+}
+
+.nav-links .adviser a {
+    color: #00A3E1;
+}
+
+.hero-section {
+    height: 740px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    url('./assets/hero-image.jpg') no-repeat top;
+    background-size: cover;
+    width: 100%;
+    z-index: 5;
+    /* clip-path: polygon(0% 0, 100% 0%, 50% 80%, 0 80%); */
+}
+
+.hero-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.hero-heading h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.hero-heading h1 img {
+    position: absolute;
+    bottom: -10px;
+    left: -35px;
+    z-index: -1;
+}
+
+.impact {
+    margin-top: 200px;
+}
+
+.impact .impact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.impact-one {
+    height: 300px;
+    background: linear-gradient( rgba(58, 93, 174, 0.7), rgba(58, 93, 174, 0.7) ), 
+    url('./assets/banner4.jpg') no-repeat top;
+    background-position-y: 20%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+.border {
+    border: 1px solid #fff;
+    margin: 10px;
+    height: 280px;
+}
+
+.impact-one::after {
+    content: "";
+    width: 100%;
+    background: url('./assets/banner-dots1.png') no-repeat center;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.impact-one .stats-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.stats-one .stats-one-img {
+    display: flex;
+    position: relative;
+}
+
+.stats-one .stats-one-img:before {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    display: block;
+}
+
+.stats-one .stats-one-img:after {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    display: block;
+}
+
+.stats-one-text {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stats-one-text p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-one-text p::after {
+    content: "";
+    background: url('./assets/strikethrough-one.svg') no-repeat;
+    height: 50px;
+    width: 75%;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    display: block;
+    z-index: -1;
+}
+
+.impact-two {
+    margin-top: 50px;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    border-top: 5px solid #00A3E1;
+}
+
+.impact-two-left {
+    width: 600px;
+    background-color: #1f315c;
+    position: relative;
+}
+
+.impact-two-left img {
+    position: absolute;
+    width: 80%;
+    display: block;
+    height: 100%;
+    left: 10%;
+}
+
+
+
+.impact-two-right {
+    background: url('./assets/banner3.jpg') no-repeat right;
+    width: 80%;
+}
