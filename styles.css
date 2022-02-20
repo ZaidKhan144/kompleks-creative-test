@@ -139,7 +139,7 @@ header {
 }
 
 .impact {
-    margin-top: 200px;
+    margin: 200px 0;
 }
 
 .impact .impact-content {
@@ -448,3 +448,100 @@ header {
     background-size: cover;
     width: 80%;
 }
+
+.impact-four {
+    height: 300px;
+    background: linear-gradient( rgba(58, 93, 174, 0.7), rgba(58, 93, 174, 0.7) ), 
+    url('./assets/banner1.jpg') no-repeat top;
+    background-position-y: 15%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    margin-top: 50px;
+}
+
+.impact-four::after {
+    content: "";
+    width: 100%;
+    background: url('./assets/banner-dots1.png') no-repeat center;
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.impact-four .stats-four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.stats-four .stats-four-img {
+    display: flex;
+    position: relative;
+}
+
+.stats-four .stats-four-img:before {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    display: block;
+}
+
+.stats-four .stats-four-img:after {
+    content: "";
+    border: 0.1px solid #fff;
+    height: 0;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    display: block;
+}
+
+.stats-four-text {
+    margin-top: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stats-four-text p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
+
+.stats-four-text p::before {
+    content: "";
+    background: url('./assets/strikethrough-4.1.svg') no-repeat;
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    display: block;
+    z-index: -1;
+}
+
+.stats-four-text p::after {
+    content: "";
+    background: url('./assets/strikethrough-4.2.svg') no-repeat;
+    height: 50px;
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    display: block;
+    z-index: -1;
+}
+
