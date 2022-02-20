@@ -27,8 +27,10 @@ time, mark, audio, video {
 
 body {
     /* background-color: #2b2b2b; */
-    min-height: 100%
+    min-height: 100%;
+    /* overflow: hidden; */
 }
+
 
 header {
     display: flex;
@@ -545,3 +547,163 @@ header {
     z-index: -1;
 }
 
+footer {
+    width: 100%;
+    min-height: 400px;
+    background-color: #1f315c;
+    border-top: 9px solid #00A3E1;
+    position: relative;
+    overflow: hidden;
+}
+
+footer:after, footer:before {
+    content: "";
+    height: 0;
+    width: 0;  
+    border-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+}
+
+footer:before {
+    border-width: 1em;
+    border-right-color: #00A3E1;
+    border-bottom-color: #00A3E1;
+}
+
+footer:after {
+    border-radius: 1em;
+    border-width: 1em;
+    border-right-color: #00A3E1;
+    border-bottom-color: #00A3E1;
+}
+
+.footer-content {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* height: 100%; */
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-content .footer-logo {
+    width: 10%;
+    align-self: flex-start;
+}
+
+.footer-pattern {
+    position: absolute;
+    bottom: 0px;
+    width: 60%;
+    /* height: 100px; */
+    right: -250px;
+}
+
+.contact-us {
+    color: #fff;
+    width: 20%;
+}
+
+.contact-us h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-sec-1 {
+    /* width: 50%; */
+}
+
+.terms {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.terms a:first-child {
+    margin-bottom: 5px;
+}
+
+.socials img:nth-child(1), .socials img:nth-child(2) {
+    margin-right: 15px;
+}
+
+.programs {
+    color: #fff;
+    width: 20%;
+}
+
+.prog h5, .hr h5, .media h5, .gi h5, .dr h5 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.prog h5:first-child {
+    margin-top: 0;
+}
+
+.stay-make {
+    color: #fff;
+    width: 20%;
+}
+
+.stay h5, .make h5 {
+    font-size: 20px;
+}
+
+.make {
+    margin-top: 50px;
+}
+
+.stay p, .make p {
+    margin: 15px 0;
+    /* width: 70%; */
+}
+
+.sign-up, .donate-footer {
+    margin-top: 25px;
+}
+
+.sign-up a, .donate-footer a {
+    border: 1px solid #00A3E1;
+    background-color: #00A3E1;
+    padding: 5px 15px;
+    color: #fff;
+}
+
+.donate-footer a {
+    border: 1px solid #C46D35;
+    background-color: #C46D35;
+}
+
+.sign-up a img, .donate-footer a img {
+    margin-left: 10px;
+}
+
+.extra-logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+}
+
+.extra-logos img:first-child {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 40px;
+}
+
+.extra-logos img:nth-child(2) {
+    width: 160px;
+    height: 50px;
+}
