@@ -109,7 +109,7 @@ header {
     color: #00A3E1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1025px) {
 
     header {
         padding-left: 50px;
@@ -187,6 +187,23 @@ header {
     
 }
 
+@media (max-width: 450px) {
+
+    header {
+        padding-left: 10px;
+    }
+
+    .logo {
+        padding-top: 10px;
+        width: 60%;
+    }
+
+    .hamburger-menu {
+        right: 70px;
+    }
+
+}
+
 .hero-section {
     height: 600px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
@@ -224,6 +241,17 @@ header {
     bottom: -10px;
     left: -35px;
     z-index: -1;
+}
+
+@media (max-width: 450px) {
+    .hero-heading h1 {
+        font-size: 40px;
+    }
+
+    .hero-heading h1 img {
+        width: 90%;
+        left: 20px;
+    }
 }
 
 .survey {
@@ -299,6 +327,37 @@ header {
     width: 80%;
 } 
 
+@media (max-width: 1025px) {
+    .student-survey {
+        width: 80%;
+        left: 10%;
+    }
+
+    .survey-dots {
+        left: -25%;
+    }
+}
+
+@media (max-width: 450px) {
+    .student-heading h2 {
+        font-size: 30px;
+    }
+
+    .student-heading h2::before {
+        left: -30px;
+        width: 20px;
+    }
+
+    .student-heading h2::after {
+        width: 20px;
+        left: 260px;
+    }
+
+    .survey-dots {
+        left: -40%;
+    }
+}
+
 .impact {
     /* margin: 200px 0; */
     padding-top: 200px;
@@ -307,9 +366,18 @@ header {
     height: 90vw;
 }
 
+
+
 @media (max-width: 1540px) {
     .impact {
         height: 110vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    .impact {
+        /* height: 100%; */
+        height: 220vw;
     }
 }
 
@@ -336,6 +404,23 @@ header {
     }
 }
 
+@media (max-width: 1025px) {
+    .impact-background {
+        height: 170vw;
+    }
+}
+
+@media (max-width: 450px) {
+    .impact {
+        height: 400vw;
+    }
+
+    .impact-background {
+        height: 280vw;
+    }
+}
+    
+
 .impact .impact-content {
     display: flex;
     flex-direction: column;
@@ -354,6 +439,12 @@ header {
     min-width: 1215px;
     background-size: cover;
     position: relative;
+}
+
+@media (max-width: 1025px) {
+    .impact-one {
+        min-width: 100%;
+    }
 }
 
 .border {
@@ -385,6 +476,12 @@ header {
 .stats-one .stats-one-img {
     display: flex;
     position: relative;
+}
+
+@media (max-width: 450px) {
+    .stats-one-img {
+        width: 40%;
+    }
 }
 
 .stats-one .stats-one-img:before {
@@ -443,6 +540,12 @@ header {
     /* width: 100%; */
     border-top: 5px solid #00A3E1;
     min-width: 1215px;
+}
+
+@media (max-width: 1025px) {
+    .impact-two {
+        min-width: 100%;
+    }
 }
 
 .impact-two-left {
@@ -512,6 +615,12 @@ header {
     z-index: 2;
 }
 
+@media (max-width: 1025px) {
+    .stats-two-text p {
+        width: 70%;
+    }
+}
+
 .stats-two-text p::before {
     content: "";
     background: url('./assets/strikethrough-2.1.svg') no-repeat;
@@ -541,6 +650,22 @@ header {
     width: 80%;
 }
 
+@media (max-width: 1025px) {
+    .impact-two-right {
+        background-position: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .stats-two-text p::before {
+        top: 45%;
+    }
+
+    .stats-two-text p::after {
+        top: 85%;
+    }
+}
+
 .impact-three {
     margin-top: 50px;
     display: flex;
@@ -549,6 +674,12 @@ header {
     /* width: 100%; */
     border-top: 5px solid #00A3E1;
     min-width: 1215px;
+}
+
+@media (max-width: 1025px) {
+    .impact-three {
+        min-width: 100%;
+    }
 }
 
 .impact-three-left {
@@ -648,6 +779,16 @@ header {
     width: 80%;
 }
 
+@media (max-width: 450px) {
+    .stats-three-text p::before {
+        top: 30%;
+    }
+
+    .stats-three-text p::after {
+        top: 80%;
+    }
+}
+
 .impact-four {
     height: 300px;
     background: linear-gradient( rgba(58, 93, 174, 0.7), rgba(58, 93, 174, 0.7) ), 
@@ -658,6 +799,12 @@ header {
     position: relative;
     margin-top: 50px;
     min-width: 1215px;
+}
+
+@media (max-width: 1025px) {
+    .impact-four {
+        min-width: 100%;
+    }
 }
 
 .impact-four::after {
@@ -777,6 +924,18 @@ footer {
     display: block;
 }
 
+@media (max-width: 1025px) {
+    .footer-dots img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-dots img {
+        width: 80%;
+    }
+}
+
 footer:after, footer:before {
     content: "";
     height: 0;
@@ -811,6 +970,12 @@ footer:after {
     margin: 0 auto;
 }
 
+@media (max-width: 1025px) {
+    .footer-content {
+        width: 95%;
+    }
+}
+
 .footer-content .footer-logo {
     width: 10%;
     align-self: flex-start;
@@ -822,6 +987,12 @@ footer:after {
     width: 60%;
     /* height: 100px; */
     right: -250px;
+}
+
+@media (max-width: 1025px) {
+    .footer-pattern {
+        width: 70%;
+    }
 }
 
 .contact-us {
@@ -925,4 +1096,67 @@ footer:after {
 .extra-logos img:nth-child(2) {
     width: 160px;
     height: 50px;
+}
+
+@media (max-width: 540px) {
+    footer {
+        padding-left: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content .footer-logo {
+        width: 40%;
+        align-self: center;
+    }
+
+    .contact-us, .programs, .stay-make, .extra-logos {
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .extra-logos {
+        align-self: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .impact {
+        height: 420vw;
+    }
+    .impact-background {
+        height: 300vw;
+        width: 250vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .impact {
+        height: 440vw;
+    }
+}
+
+@media (max-width: 280px) {
+    .hero-heading h1 {
+        font-size: 25px;
+    }
+
+    .student-heading h2 {
+        font-size: 20px;
+    }
+
+    .student-heading h2::after {
+        width: 20px;
+        left: 175px;
+    }
+
+    .impact {
+        height: 570vw;
+    }
+
+    .impact-background {
+        height: 400vw;
+    }
 }
