@@ -234,5 +234,34 @@
        $("header").removeClass("active");
     }
 });
+
+const menuIcon = document.querySelector('.hamburger-menu');
+const mainNav = document.querySelector('nav');
+const hamLinks = document.querySelectorAll('.nav-links a');
+
+
+function hamburgerMenu() {
+
+    //hamburger function
+    function hamburger (){
+        menuIcon.classList.toggle('change');
+        mainNav.classList.toggle('change');
+    }
+
+    //when click on hamburger menu
+    menuIcon.addEventListener('click', () => {
+        hamburger();
+    });
+
+    //when click on links, hamburger menu closes
+    for(var i =0 ; i<hamLinks.length;i++){
+        hamLinks[i].addEventListener('click',()=>{
+            hamburger();
+        });
+    }
+}
+
+hamburgerMenu();
+
 </script>
 </html>
